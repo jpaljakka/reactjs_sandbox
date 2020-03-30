@@ -3,6 +3,6 @@ This is simple counter, it is being done with React as part of Full Stack studie
 
 
 
-![ScreenShot](/assets/scrn.png?raw=true)
+![ScreenShot](src/assets/scrn.png?raw=true)
 
 

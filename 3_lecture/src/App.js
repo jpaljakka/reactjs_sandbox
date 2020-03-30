@@ -44,7 +44,8 @@ resetForm = () => {
   return (
     <>
     <Header/>
-    
+    <div className="wrapper">
+    <div className="calculator_wrapper">
     <div className="card" id="background_likes">
     <h1 className="thumbsup">Thumbs up: {this.state.likes} </h1>
     </div>
@@ -54,10 +55,14 @@ resetForm = () => {
     <div className="card" id="background_total">
     <h1 className="total">Total: {this.state.total_likes}</h1>
     </div>
-    
+    </div>
+    <div className="buttons_wrapper">
     <button className="buttons" onClick={this.addLikes}>Thumbs up</button>
     <button className="buttons" onClick={this.disLikes}>Thumbs down</button>
     <button className="buttons" onClick={this.resetForm}>Reset likes</button>
+    </div>
+    </div>
+    
     <Footer/>
     </>
     );

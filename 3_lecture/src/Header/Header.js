@@ -3,12 +3,14 @@ import './Header.css';
 
 
 class Header extends React.Component{
-  
+
       render() {
+        const date = new Date();
       return (
-      
+       
         <header>
-        <h1>This is 3th React Lecture. State and event -handling</h1>
+        <h1 className="logo"> <p className="thumbs">Thumb</p> <br/> Counter</h1>
+        <p className="date">{date.toDateString()}</p>
         </header>
 
         

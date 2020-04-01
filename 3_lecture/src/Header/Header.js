@@ -9,7 +9,7 @@ class Header extends React.Component{
       return (
        
         <header>
-        <h1 className="logo"> <p className="thumbs">Thumb</p> <br/> Counter</h1>
+        <h1 className="logo"> <p className="thumbs">Thumb</p> Counter</h1>
         <p className="date">{date.toDateString()}</p>
         </header>
 

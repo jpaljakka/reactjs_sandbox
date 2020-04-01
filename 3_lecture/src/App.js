@@ -3,6 +3,8 @@ import './App.css';
 import Header from './Header/Header.js';
 import Footer from './Footer/Footer.js';
 
+
+
 class App extends React.Component{
 state = {
   likes: 0,
@@ -16,7 +18,7 @@ addLikes = () => {
     total_likes: this.state.total_likes+1
     
   });
-  (this.state.likes % 2 == 0) ? document.getElementById("background_likes").style.background = "orange" :  document.getElementById("background_likes").style.background = "blue"
+  (this.state.likes % 2 === 0) ? document.getElementById("background_likes").style.background = "orange" :  document.getElementById("background_likes").style.background = "blue"
   
 };
 
@@ -25,20 +27,21 @@ disLikes = () => {
     dislikes: this.state.dislikes+1,
     total_likes: this.state.total_likes-1
   });
-  (this.state.dislikes % 2 == 0) ? document.getElementById("background_dislike").style.background = "orange" :  document.getElementById("background_dislike").style.background = "blue"
+  (this.state.dislikes % 2 === 0) ? document.getElementById("background_dislike").style.background = "orange" :  document.getElementById("background_dislike").style.background = "blue"
 };
 
 
 
 resetForm = () => {
   this.setState({
-    likes: this.state.likes = 0,
-    dislikes: this.state.dislikes = 0,
-    total_likes: this.state.total_likes = 0
+    likes: 0,
+    dislikes:  0,
+    total_likes:  0
   });
   (this.state.total_likes = 0) ? document.getElementById("background_likes").style.background = "unset" :  document.getElementById("background_likes").style.background = "unset" && (this.state.total_likes = 0) ? document.getElementById("background_dislike").style.background = "unset" :  document.getElementById("background_dislike").style.background = "unset"
-  
 };
+
+
 
   render() {
   return (
@@ -47,6 +50,7 @@ resetForm = () => {
     <div className="wrapper">
     <div className="calculator_wrapper">
     <div className="card" id="background_likes">
+    
     <h1 className="thumbsup">Thumbs up: {this.state.likes} </h1>
     </div>
     <div className="card" id="background_dislike">

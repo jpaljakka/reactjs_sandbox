@@ -1,10 +1,13 @@
+@import url('https://fonts.googleapis.com/css2?family=VT323&display=swap');
 body {
+	
+	font-family: 'VT323', monospace;
 	margin: 0;
 	width: 100%;
 	height: 100vh;
 	font-family: "Exo", sans-serif;
 	color: #fff;
-	background: linear-gradient(-90deg, #52ee81, #abe73c, #23a6d5, #23d5ab );
+	background: linear-gradient(-90deg, #bd8216, #c36902b7, #832912, #a15a0a );
 	background-size: 400% 400%;
 	-webkit-animation: gradientBG 150s ease infinite;
 	        animation: gradientBG 150s ease infinite;
@@ -12,16 +15,19 @@ body {
 .container {
 	width: 100%;
 	position: absolute;
-	top: 35%;
+	top: 15%;
 	text-align: center;
 }
 h1 {
 	font-weight: 900;
+	font-size: 4rem;
+	text-transform: uppercase;
 }
-a {
-	text-decoration: none;
-	color: #212121;
+
+.score{
+	font-size: 2rem;
 }
+
 @-webkit-keyframes gradientBG {
 	0% {
 		background-position: 0% 50%;
@@ -52,12 +58,12 @@ button{
   border-radius: 5px;
   border: none;
   margin: 2rem;
-  background-color: rgba(57, 19, 163, 0.308);
+  background-color: rgba(34, 149, 14, 0.739);
   transition: background-color ease-in-out 400ms;
 }
 
 button:hover{
   box-shadow: 0 0 3px 1px black;
-  background-color: rgba(57, 19, 163, 0.678);
+  background-color: rgba(26, 124, 8, 0.966);
 
 }

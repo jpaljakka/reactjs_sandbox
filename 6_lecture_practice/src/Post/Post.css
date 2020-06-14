@@ -1,0 +1,36 @@
+body{
+    background-color: rgb(79, 79, 209);
+}
+
+.card{
+    background-color: #f4f4f4;
+    border-radius: 3px;
+    box-shadow: 0 0 20px black;
+    border: 10px solid #f3f3f3;
+    transition: box-shadow ease-in-out 400ms;
+}
+
+.card:hover{
+    box-shadow: 0 10px 30px black;
+}
+
+h1{
+    font-size: 1.5rem;
+    letter-spacing: 1.5px;
+}
+
+.newPost{
+    display: grid;
+    align-items: flex-start;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1rem;
+    margin: 2rem;
+    max-width: 5rem;
+}
+
+.hero{
+    width: 15rem;
+    height: 10rem;
+    border-radius: 5px;
+    
+}

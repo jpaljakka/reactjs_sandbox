@@ -1,0 +1,32 @@
+
+
+.readmore{
+    display: flex;
+    color: black;
+    background-color: brown;
+    height: 2rem;
+    width: 10rem;
+    text-align: center;
+    margin: 1rem;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+
+}
+
+.container{
+    margin: 2rem;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+
+}
+
+.flex-container{
+    display: inline-flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 0 auto;
+
+}

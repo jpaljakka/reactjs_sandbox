@@ -1,0 +1,27 @@
+body {
+  background-color: whitesmoke;
+}
+
+.container{
+  margin:  0 auto;
+  position: absolute;
+  right: 10rem;
+  left: 10rem;
+  top:20rem;
+  height: 20rem;
+  width: 20rem;
+}
+
+.voteCard {
+background-color: violet;
+height: 15rem;
+width: 15rem;
+padding: 2rem;
+text-align: center;
+}
+
+button{
+  width: 5rem;
+  height: 5rem;
+  
+}

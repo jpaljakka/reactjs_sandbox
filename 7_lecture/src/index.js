@@ -1,10 +1,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
 
+import Vote from './Vote/Vote'
 
 ReactDOM.render(
-    <App />,document.getElementById('root')
-);
 
+    <Vote />
+,
+  document.getElementById('root')
+);
